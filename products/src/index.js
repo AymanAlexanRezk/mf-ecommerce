@@ -1,10 +1,13 @@
 import faker from 'faker';
 
-let products = '';
+let listItems = '';
 for (let i = 0; i < 5; i++) {
   const productName = faker.commerce.productName();
-  products += `<li>${productName}</li>`;
+  listItems += `<li>${productName}</li>`;
 }
 
-console.log(products);
-export default products;
+const productsList = document.querySelector('.products-list');
+productsList.innerHTML = listItems;
+
+console.log(listItems);
+export default listItems;
