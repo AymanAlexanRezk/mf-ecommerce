@@ -9,5 +9,5 @@ for (let i = 0; i < 5; i++) {
 const productsList = document.querySelector('.products-list');
 productsList.innerHTML = listItems;
 
-console.log(listItems);
-export default listItems;
+// console.log(listItems);
+// export default listItems;
